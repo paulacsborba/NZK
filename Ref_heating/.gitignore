@@ -1,0 +1,17 @@
+# ---- model outputs (regenerable, ~5.8 GB) ----
+results_*/results_period_*/
+results_*/*.zip
+*.zip
+
+# solver / run logs
+*.log
+
+# ---- OS / editor / python junk ----
+.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Note: results_*/*.png (summary plots) ARE kept.
+# To also commit a specific big output:  git add -f <path>

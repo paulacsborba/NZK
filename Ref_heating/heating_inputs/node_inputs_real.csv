@@ -1,0 +1,18 @@
+node,province,DH_heat_GWh_2021,industrial_steam_GWh_2021,building_city_gas_GWh_2021,DEC_heat_GWh_assumed(70% of gas),has_DH_in_model,has_industrial_steam_in_model,hourly_profile_source,KDHC_elec_GWh_2021_ccgt_chp,KDHC_elec_GWh_2021_gas_ces,KDHC_elec_GWh_2021_waste,KDHC_elec_GWh_2021_biomass,KDHC_elec_GWh_2021_biogas,KDHC_elec_GWh_2021_fuel_cell
+SEL,Seoul,6355.7,0.0,42074.2,29451.9,True,False,Seoul,0.0,76.1,92.6,0.0,11.8,0.0
+PUS,Busan,344.4,392.9,10221.3,7154.9,True,True,Gyeongsangnam-do,0.0,0.0,0.0,0.0,0.0,0.0
+TAE,Daegu,979.7,778.7,8165.6,5716.0,True,True,Daegu,0.0,0.0,119.1,12.8,0.0,0.0
+INC,Incheon,2493.6,598.4,9631.0,6741.7,True,True,Gyeonggi-do,0.0,0.0,0.0,0.0,0.0,0.0
+KWJ,Gwangju,346.0,1.8,5408.8,3786.2,True,False,Gwangju/Jeonnam,0.0,0.0,16.7,0.0,0.0,0.0
+USN,Ulsan,0.0,12472.8,4277.0,2993.9,False,True,national,0.0,0.0,0.0,0.0,0.0,0.0
+SJG,Sejong,815.8,54.2,460.1,322.1,True,False,Sejong,0.0,0.0,0.0,0.0,0.0,0.0
+GGI,Gyeonggi-do,16639.6,3810.4,37846.4,26492.5,True,True,Gyeonggi-do,11642.9,106.5,41.8,0.0,0.0,89.2
+GWN,Gangwon-do,0.0,0.0,3860.3,2702.2,False,False,national,0.0,0.0,0.0,0.0,0.0,0.0
+CNA,Chungcheongnam-do,393.9,5996.8,5940.5,4158.4,True,True,Chungcheongbuk-do,0.0,0.0,0.0,0.0,0.0,0.0
+CNB,Chungcheongbuk-do,681.6,1591.9,4126.6,2888.6,True,True,Chungcheongbuk-do,0.0,0.0,74.8,0.0,0.0,0.0
+DJJ,Daejeon,691.8,413.3,5467.0,3826.9,True,True,Sejong,0.0,0.0,0.0,0.0,0.0,0.0
+JNB,Jeollabuk-do,50.5,3594.3,5316.8,3721.7,False,True,national,0.0,0.0,0.0,0.0,0.0,0.0
+JNA,Jeollanam-do,132.0,9700.9,3838.1,2686.7,False,True,Gwangju/Jeonnam,0.0,0.0,0.0,0.0,0.0,0.0
+GNB,Gyeongsangbuk-do,113.0,2674.7,6845.3,4791.7,False,True,national,0.0,0.0,0.0,0.0,0.0,0.0
+GNA,Gyeongsangnam-do,672.6,915.8,8164.0,5714.8,True,True,Gyeongsangnam-do,0.0,0.0,0.0,0.0,0.0,0.0
+JEJ,Jeju,0.0,21.4,481.6,337.1,False,False,national,0.0,0.0,0.0,0.0,0.0,0.0

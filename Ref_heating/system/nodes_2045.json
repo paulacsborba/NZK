@@ -1,0 +1,952 @@
+{
+  "nodes": [
+    {
+      "type": "NaturalGas",
+      "global_data": {
+        "time_interval": "NaturalGas",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "natgas_source",
+          "supply": {
+            "segment1": {
+              "price": [
+                37.7504
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                Infinity
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Coal",
+      "global_data": {
+        "time_interval": "Coal",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "coal_source",
+          "supply": {
+            "segment1": {
+              "price": [
+                15.9597
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                Infinity
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Uranium",
+      "global_data": {
+        "time_interval": "Uranium",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "uranium_source",
+          "supply": {
+            "segment1": {
+              "price": [
+                5.0662
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                Infinity
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Electricity",
+      "global_data": {
+        "time_interval": "Electricity",
+        "max_nsd": [
+          0.1
+        ],
+        "price_nsd": [
+          1000
+        ],
+        "constraints": {
+          "BalanceConstraint": true,
+          "MaxNonServedDemandConstraint": true,
+          "MaxNonServedDemandPerSegmentConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "elec_SEL",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_SEL"
+            }
+          }
+        },
+        {
+          "id": "elec_PUS",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_PUS"
+            }
+          }
+        },
+        {
+          "id": "elec_TAE",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_TAE"
+            }
+          }
+        },
+        {
+          "id": "elec_INC",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_INC"
+            }
+          }
+        },
+        {
+          "id": "elec_KWJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_KWJ"
+            }
+          }
+        },
+        {
+          "id": "elec_USN",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_USN"
+            }
+          }
+        },
+        {
+          "id": "elec_SJG",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_SJG"
+            }
+          }
+        },
+        {
+          "id": "elec_GGI",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_GGI"
+            }
+          }
+        },
+        {
+          "id": "elec_GWN",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_GWN"
+            }
+          }
+        },
+        {
+          "id": "elec_CNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_CNA"
+            }
+          }
+        },
+        {
+          "id": "elec_CNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_CNB"
+            }
+          }
+        },
+        {
+          "id": "elec_DJJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_DJJ"
+            }
+          }
+        },
+        {
+          "id": "elec_JNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_JNB"
+            }
+          }
+        },
+        {
+          "id": "elec_JNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_JNA"
+            }
+          }
+        },
+        {
+          "id": "elec_GNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_GNB"
+            }
+          }
+        },
+        {
+          "id": "elec_GNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_GNA"
+            }
+          }
+        },
+        {
+          "id": "elec_JEJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_ref.csv",
+              "header": "Demand_MW_45_JEJ"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Electricity",
+      "global_data": {
+        "time_interval": "Electricity",
+        "constraints": {
+          "BalanceConstraint": false,
+          "MaxNonServedDemandConstraint": false,
+          "MaxNonServedDemandPerSegmentConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "hydro_source_GWN"
+        },
+        {
+          "id": "hydro_source_GGI"
+        },
+        {
+          "id": "hydro_source_CNB"
+        },
+        {
+          "id": "hydro_source_GNB"
+        },
+        {
+          "id": "hydro_source_GNA"
+        },
+        {
+          "id": "hydro_source_JNB"
+        },
+        {
+          "id": "hydro_source_JNA"
+        },
+        {
+          "id": "hydro_source_CNA"
+        }
+      ]
+    },
+    {
+      "type": "CO2Captured",
+      "global_data": {
+        "time_interval": "CO2Captured",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "co2_captured_KR"
+        }
+      ]
+    },
+    {
+      "type": "CO2Captured",
+      "global_data": {
+        "time_interval": "CO2Captured",
+        "constraints": {
+          "BalanceConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "co2_storage_offshore_KR",
+          "constraints": {
+            "CO2StorageConstraint": true
+          },
+          "rhs_policy": {
+            "CO2StorageConstraint": 4753600
+          }
+        }
+      ]
+    },
+    {
+      "type": "CO2",
+      "global_data": {
+        "time_interval": "CO2",
+        "constraints": {
+          "BalanceConstraint": false
+        }
+      },
+      "instance_data": [
+        {
+          "id": "co2_sink_KR",
+          "constraints": {
+            "CO2CapConstraint": false
+          },
+          "rhs_policy": {
+            "CO2CapConstraint": 27000000
+          }
+        }
+      ]
+    },
+    {
+      "type": "Steam",
+      "global_data": {
+        "time_interval": "Steam",
+        "max_nsd": [
+          0.1
+        ],
+        "price_nsd": [
+          1000
+        ],
+        "constraints": {
+          "BalanceConstraint": true,
+          "MaxNonServedDemandConstraint": true,
+          "MaxNonServedDemandPerSegmentConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "dh_SEL",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "SEL_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_PUS",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "PUS_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_TAE",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "TAE_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_INC",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "INC_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_KWJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "KWJ_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_SJG",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "SJG_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_GGI",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GGI_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_CNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "CNA_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_CNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "CNB_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_DJJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "DJJ_heat_dh"
+            }
+          }
+        },
+        {
+          "id": "dh_GNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GNA_heat_dh"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Steam",
+      "global_data": {
+        "time_interval": "Steam",
+        "max_nsd": [
+          0.1
+        ],
+        "price_nsd": [
+          1000
+        ],
+        "constraints": {
+          "BalanceConstraint": true,
+          "MaxNonServedDemandConstraint": true,
+          "MaxNonServedDemandPerSegmentConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "steam_ind_PUS",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "PUS_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_TAE",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "TAE_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_INC",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "INC_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_USN",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "USN_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_GGI",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GGI_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_CNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "CNA_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_CNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "CNB_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_DJJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "DJJ_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_JNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "JNB_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_JNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "JNA_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_GNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GNB_steam_ind"
+            }
+          }
+        },
+        {
+          "id": "steam_ind_GNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GNA_steam_ind"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Heat",
+      "global_data": {
+        "time_interval": "Heat",
+        "max_nsd": [
+          0.1
+        ],
+        "price_nsd": [
+          1000
+        ],
+        "constraints": {
+          "BalanceConstraint": true,
+          "MaxNonServedDemandConstraint": true,
+          "MaxNonServedDemandPerSegmentConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "heat_dec_SEL",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "SEL_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_PUS",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "PUS_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_TAE",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "TAE_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_INC",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "INC_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_KWJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "KWJ_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_USN",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "USN_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_SJG",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "SJG_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_GGI",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GGI_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_GWN",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GWN_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_CNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "CNA_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_CNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "CNB_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_DJJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "DJJ_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_JNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "JNB_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_JNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "JNA_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_GNB",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GNB_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_GNA",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "GNA_heat_dec"
+            }
+          }
+        },
+        {
+          "id": "heat_dec_JEJ",
+          "demand": {
+            "timeseries": {
+              "path": "system/demand_heat.csv",
+              "header": "JEJ_heat_dec"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Biomass",
+      "global_data": {
+        "time_interval": "Biomass",
+        "constraints": {
+          "BalanceConstraint": true
+        }
+      },
+      "instance_data": [
+        {
+          "id": "msw_SEL",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                60.0
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_PUS",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                17.86
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_TAE",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                76.07
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_INC",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                17.86
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_KWJ",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                17.86
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_SJG",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                17.86
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_GGI",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                23.57
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_CNA",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                17.86
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_CNB",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                42.86
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_DJJ",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                17.86
+              ]
+            }
+          }
+        },
+        {
+          "id": "msw_GNA",
+          "supply": {
+            "segment1": {
+              "price": [
+                -42.0
+              ],
+              "min": [
+                0.0
+              ],
+              "max": [
+                17.86
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
